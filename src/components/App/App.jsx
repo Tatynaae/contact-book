@@ -9,10 +9,15 @@ import { Section } from '../Section/Section';
 import { Text, Title } from './App.styled';
 import { getFilteredContacts } from 'helpers/getFilteredContacts';
 
+
 export const App = () => {
+
+ 
+  
   const contacts = useSelector(getContacts);
   const filter = useSelector(getFilter);
   const filteredContacts = getFilteredContacts(contacts, filter);
+ 
 
   return (
     <Box as="main" bg="mainBackgroundColor">
