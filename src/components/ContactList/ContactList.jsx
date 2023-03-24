@@ -11,7 +11,7 @@ export const ContactList = () => {
 
   return (
     <Contacts>
-      {filteredContacts.sort((a,b) => a.name > b.name).map(({ name, number, id }) => (
+      {filteredContacts.map(({ name, number, id }) => (
         <li key={id}>
           <Contact name={name} number={number} id={id} />
         </li>
